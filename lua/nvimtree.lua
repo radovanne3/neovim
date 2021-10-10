@@ -36,8 +36,6 @@ vim.g.nvim_tree_icons = {
 
 vim.g.nvim_tree_ignore = { '.git', 'node_modules', '.cache', 'tags' }
 vim.g.nvim_tree_gitignore = true 
-vim.g.nvim_tree_auto_close = 1
 vim.g.nvim_tree_hide_dotfiles = true
 vim.g.nvim_tree_git_hl = 1
 vim.g.nvim_tree_highlight_opened_files = true
-vim.g.nvim_tree_lsp_diagnostics = 1

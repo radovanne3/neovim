@@ -19,7 +19,11 @@ vim.api.nvim_exec(
 local use = require('packer').use
 require('packer').startup(function()
   use 'wbthomason/packer.nvim' -- Package manager
-  use 'kyazdani42/nvim-tree.lua' -- Neovim-tree
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function() require'nvim-tree'.setup {} end
+}
   use 'kyazdani42/nvim-web-devicons' --icons
   use 'preservim/tagbar' -- Neovim tagbar
   use 'glepnir/lspsaga.nvim' -- UI for neovim's LSP
@@ -51,7 +55,6 @@ require('packer').startup(function()
   -- Database
   use { 'tpope/vim-dadbod' }
   use { 'kristijanhusak/vim-dadbod-ui' }
-  use 'glepnir/dashboard-nvim' -- cool dashboard
 end)
 
 
